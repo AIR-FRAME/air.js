@@ -639,7 +639,8 @@ var GRID = function (_def) {
 				var gridContainer = container[0].getElementsByTagName(_gridContainerTag);
 				
 				var _id = getParameterByName("id", document.location.href);
-				
+				//alert("_id: "+_id)
+				//alert(gridContainer.length);
 				for(var x=0;x<gridContainer.length;x++){
 					var gc = gridContainer[x];
 					var _data = gc.getAttribute("data");
@@ -650,7 +651,7 @@ var GRID = function (_def) {
 					if(_id){
 						_data = _data.replace("{id}", _id);
 					}
-					
+					//alert(_data);
 					_get(gc, _data, function(_gc, DATA){
 						//alert(document.location.href);
 						//alert("GRID URL: [" + _data + "]\n\nGRID DATA: " + DATA);
@@ -708,8 +709,6 @@ var NAV = function (_def) {
 					divNav.className = "nav";
 					var html = "";
 					html += "<div class=\"nav-logo\" url=\"/app/\"><img height=\"38px\" src=\"../../images/logo.jpg\" /></div>";
-					html += "<div class=\"nav-left\" url=\"/app/visits/\">Visits</div>";
-					html += "<div class=\"nav-left\" url=\"/app/visitors/\">Visitors</div>";
 					html += "<div class=\"nav-left\" url=\"/app/employees/\">Employees</div>";
 					html += "<div class=\"nav-left\" url=\"/app/locations/\">Locations</div>";
 					html += "<div class=\"nav-right\"url=\"/app/accounts/\">Account</div>";

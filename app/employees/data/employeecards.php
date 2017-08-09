@@ -1,8 +1,8 @@
 <?php
-	include 'db.php';	
+	include '../../../data/db.php';	
 	
 	$id = $_GET["id"];
-	$sql = "SELECT ID, FIRSTNAME, MIDDLENAME, LASTNAME, UNIQUEID, STATUS, EMAIL, PHONE, CITY, STATE, COUNTRY FROM VSYNC_PERSONS WHERE ID=$id";
+	$sql = "SELECT ID, CARDNUMBER, STATUS, CREATEDON FROM VSYNC_PERSONCARDS WHERE PERSONID=$id";
 	$result = $conn->query($sql);	
 	$encode = array();
 

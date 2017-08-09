@@ -30,58 +30,14 @@
 </div>
 <div class="form-tab" title="Cards">
 	<div class="grid-container">
-		<grid-container template="../templates/grid_template.html" data="../data/employeecards.php?id={id}" save="/save/">
+		<grid-container template="../../templates/grid_template.html" data="data/employeecards.php?id={id}" save="/save/">
 			<grid-columns>
 				<grid-column hidden="true" title="ID" bind="ID" />
 				<grid-column title="Card Num" bind="CARDNUMBER" />
 				<grid-column title="Status" bind="STATUS" />
 				<grid-column title="Created On Date" bind="CREATEDON" />
 			</grid-columns>
-			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template_personcards.html" delete="Delete" />
-		</grid-container>
-	</div>
-</div>
-<div class="form-tab" title="Access">
-	<div class="grid-container">
-		<grid-container template="../templates/grid_template2.html" data="../data/employeecards.php?id={id}" save="/save/">
-			<grid-columns>
-				<grid-column title="ID" bind="ID" />
-				<grid-column title="Access Name" bind="CARDNUMBER" />
-				<grid-column title="Status" bind="STATUS" />
-				<grid-column title="Activation Date" bind="CREATEDON" />
-				<grid-column title="DeActivation Date Date" bind="CREATEDON" />
-			</grid-columns>
-			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" />
-		</grid-container>	
-	</div>
-</div>	
-<div class="form-tab" title="Documents">
-	<div class="grid-container">
-		<grid-container template="../templates/grid_template.html" data="../data/employee.php?id={id}" save="/save/">
-			<grid-columns>
-				<grid-column title="ID" bind="ID" />
-				<grid-column title="Document Name" bind="NAME" />
-				<grid-column title="Type" bind="TYPE" />
-				<grid-column title="Status" bind="STATUS" />
-				<grid-column title="Uploaded On" bind="UPLOADED" />
-				<grid-column title="Expires On" bind="EXPIRESON" />
-			</grid-columns>
-			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" delete="Delete" />
-		</grid-container>
-	</div>
-</div>
-<div class="form-tab" title="Occupations">
-	<div class="grid-container">
-		<grid-container template="../templates/grid_template.html" data="../data/employee.php?id={id}" save="/save/">
-			<grid-columns>
-				<grid-column title="ID" bind="ID" />
-				<grid-column title="Occupation" bind="OCCUPATION" />
-				<grid-column title="Contract No" bind="CONTRACTNO" />
-				<grid-column title="Status" bind="STATUS" />
-				<grid-column title="Start Date" bind="STARTDATE" />
-				<grid-column title="End Date" bind="ENDDATE" />
-			</grid-columns>
-			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" delete="Delete" />
+			<grid edit-link="1" edit-id="0" edit-template="grid_edit_template_personcards.html" delete="Delete" />
 		</grid-container>
 	</div>
 </div>

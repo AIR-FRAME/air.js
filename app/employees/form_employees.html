@@ -1,0 +1,15 @@
+<div class="form-tab" title="Employees">
+	<div style="padding-bottom:3px;">
+ 	</div>
+	<br />
+	<grid-container template="../../templates/grid_template.html" data="data/employees.php" save="/save/">
+		<grid-columns>
+			<grid-column title="ID" bind="ID" />
+			<grid-column title="First Name" bind="FIRSTNAME" />
+			<grid-column title="Last Name" bind="LASTNAME" />
+			<grid-column title="UniqueID" bind="UNIQUEID" />
+			<grid-column title="Status" bind="STATUS" />
+		</grid-columns>
+		<grid edit-link="1" edit-id="0" edit-action="openRecordInTab" edit-form="_index.html" />
+	</grid-container>
+</div>

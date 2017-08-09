@@ -1,0 +1,37 @@
+<div class="form-tab" title="General">	
+	<div class="container-form" data="data/location.php?id={id}" save="/save/">
+		<div class="container-form-row">
+			<label>Name</label><input bind="NAME" type="text" />
+			<label>Address</label><input bind="ADD1" type="text" />
+			<label>UniqueID</label><input bind="UNIQUEID" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>Phone</label><input bind="PHONE" type="text" />
+			<label>Email</label><input style="width:220px"  bind="EMAIL" type="text" />
+			<label>Last Name</label><input type="text" />
+		</div>	
+		<div class="container-form-row">
+			<label>City</label><input bind="CITY" type="text" />
+			<label>State</label><input  bind="STATE" type="text" />
+			<label>Country</label><input bind="COUNTRY" type="text" />
+		</div>	
+	</div>		
+	<br />
+	<div class="container-form" data="data/location.php?id={id}" save="/save/">
+		<div class="container-form-row">
+			<label>Employer</label><select bind="List.Employers"></select>
+			<label>Addres</label><input bind="LASTNAME" type="text" />
+		</div>				
+	</div>				
+</div>
+<div class="form-tab" title="Bulding">
+	<div class="grid-container">
+		<grid-container template="../../templates/grid_template.html" data="data/locationbuildings.php?id={id}" save="/save/">
+			<grid-columns>
+				<grid-column hidden="true" title="ID" bind="ID" />
+				<grid-column title="Building Name" bind="NAME" />
+			</grid-columns>
+			<grid edit-link="1" edit-id="0" edit-template="grid_edit_template_locationbuildings.html" add="Add" delete="Delete" />
+		</grid-container>
+	</div>
+</div>

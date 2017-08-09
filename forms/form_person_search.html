@@ -1,0 +1,34 @@
+<div class="form-tab" title="Persons">
+	<div style="padding-bottom:3px;">
+		<div class="searchbox">
+			<div class="searchbox-title">First name</div>
+			<span class="searchbox-close" onclick="this.parentNode.style.display='none';">&nbsp;X&nbsp;</span>
+			<input type="text" />
+		</div>
+		<div class="searchbox">
+			<div class="searchbox-title">Last name</div>
+			<span class="searchbox-close" onclick="this.parentNode.style.display='none';">&nbsp;X&nbsp;</span>
+			<input type="text" />
+		</div>
+		<div class="searchbox">
+			<div class="searchbox-title">Unique ID</div>
+			<span class="searchbox-close" onclick="this.parentNode.style.display='none';">&nbsp;X&nbsp;</span>
+			<input type="text" />
+		</div>
+		<div class="searchbox">
+			<div class="searchbox-title">Status</div>
+			<span class="searchbox-close" onclick="this.parentNode.style.display='none';">&nbsp;X&nbsp;</span>
+			<select><option>All</option><option>Pre-Enrolled</option><option>Active</option><option>Disabled</option></select>
+		</div>
+ 	</div>
+	<grid-container template="templates/grid_template.html" data="data/employees.php" save="/save/">
+		<grid-columns>
+			<grid-column title="ID" bind="ID" />
+			<grid-column title="First Name" bind="FIRSTNAME" />
+			<grid-column title="Last Name" bind="LASTNAME" />
+			<grid-column title="UniqueID" bind="UNIQUEID" />
+			<grid-column title="Status" bind="STATUS" />
+		</grid-columns>
+		<grid edit-link="1" edit-id="0" edit-action="openRecordInTab" edit-form="forms/form_person_search_template.html" />
+	</grid-container>
+</div>

@@ -1,0 +1,48 @@
+<div class="form-tab" title="General">	
+	<div class="container-form" data="../data/visit.php?id={id}" save="/save/">
+		<div class="container-form-row">
+			<label>Meeting Name</label><input bind="NAME" type="text" />
+			<label>Visit Date</label><input bind="VISITDATE" type="text" />
+			<label>ID</label><input bind="ID" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>Meeting Name</label><input bind="NAME" type="text" />
+			<label>Visit Date</label><input bind="VISITDATE" type="text" />
+			<label>ID</label><input bind="ID" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>Meeting Name</label><input bind="NAME" type="text" />
+			<label>Visit Date</label><input bind="VISITDATE" type="text" />
+			<label>ID</label><input bind="ID" type="text" />
+		</div>
+	</div>		
+	<br />			
+</div>
+<div class="form-tab" title="Visitors">
+	<div class="grid-container">
+		<grid-container template="../templates/grid_template.html" data="../data/meetingvisitors.php?id={id}">
+			<grid-columns>
+				<grid-column title="ID" bind="ID" />
+				<grid-column title="First Name" bind="FIRSTNAME" />
+				<grid-column title="Last Name" bind="LASTNAME" />
+				<grid-column title="Company" bind="COMPANY" />
+				<grid-column title="Email" bind="EMAIL" />
+			</grid-columns>
+			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" delete="Delete" />
+		</grid-container>
+	</div>
+</div>
+<div class="form-tab" title="Background Check">
+	<div class="grid-container">
+		<grid-container template="../templates/grid_template2.html" data="../data/user.php?id={id}">
+			<grid-columns>
+				<grid-column title="ID" bind="id" />
+				<grid-column title="Access Name" bind="AccessName" />
+				<grid-column title="Status" bind="Status" />
+				<grid-column title="Activation Date" bind="ActivationDate" />
+				<grid-column title="DeActivation Date Date" bind="DeActivationDate" />
+			</grid-columns>
+			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" />
+		</grid-container>	
+	</div>
+</div>	

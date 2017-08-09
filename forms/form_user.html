@@ -1,0 +1,49 @@
+<div class="form-tab" title="General">	
+	<div class="container-form" data="../data/user.php?id={id}" save="/save/">
+		<div class="container-form-row">
+			<label>First Name</label><input bind="FIRSTNAME" type="text" />
+			<label>Last Name</label><input bind="LASTNAME" type="text" />
+			<label>Last Name</label><input bind="lastname" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>Phone</label><input bind="PHONE" type="text" />
+			<label>Email</label><input style="width:220px"  bind="EMAIL" type="text" />
+			<label>Last Name</label><input bind="lastname" type="text" />
+		</div>	
+		<div class="container-form-row">
+			<label>Phone</label><input bind="phone" type="text" />
+			<label>Email</label><input  bind="email" type="text" />
+			<label>Last Name</label><input bind="lastname" type="text" />
+		</div>	
+	</div>		
+	<br />			
+</div>
+<div class="form-tab" title="Roles">
+	<div class="grid-container">
+		<grid-container template="../templates/grid_template.html" data="../data/user.php?id={id}">
+			<grid-columns>
+				<grid-column hidden="true" title="ID" bind="id" />
+				<grid-column title="Card Num" bind="CardNum" />
+				<grid-column title="Card Type" bind="CardType" />
+				<grid-column title="Status" bind="Status" />
+				<grid-column title="Activation Date" bind="ActivationDate" />
+				<grid-column title="DeActivation Date Date" bind="DeActivationDate" />
+			</grid-columns>
+			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" delete="Delete" />
+		</grid-container>
+	</div>
+</div>
+<div class="form-tab" title="Special Access">
+	<div class="grid-container">
+		<grid-container template="../templates/grid_template2.html" data="../data/user.php?id={id}">
+			<grid-columns>
+				<grid-column title="ID" bind="id" />
+				<grid-column title="Access Name" bind="AccessName" />
+				<grid-column title="Status" bind="Status" />
+				<grid-column title="Activation Date" bind="ActivationDate" />
+				<grid-column title="DeActivation Date Date" bind="DeActivationDate" />
+			</grid-columns>
+			<grid edit-link="1" edit-id="0" edit-template="../templates/grid_edit_template.html" />
+		</grid-container>	
+	</div>
+</div>	

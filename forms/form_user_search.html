@@ -1,0 +1,36 @@
+<div class="form-tab" style="max-width:650px;" title="User Search">	
+	<div class="container-form">
+		<h2>User&nbsp;Search</h2><br />
+		<div class="container-form-row">
+			<label>First Name</label><input bind="firstname" type="text" />
+			<label>Last Name</label><input bind="lastname" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>Phone</label><input bind="phone" type="text" />
+			<label>Email</label><input  bind="email" type="text" />
+		</div>
+		<div class="container-form-row">
+			<label>LoginID</label><input bind="phone" type="text" />
+			<label>Network ID</label><input bind="email" type="text" />
+		</div>	
+		<div class="container-form-row">
+			<label>Dols</label><input bind="phone" type="text" />
+		</div>				
+	</div>	
+	<br />
+	<input type="submit" id="submit" value="Search" />					
+</div>
+<div class="form-tab" style="max-width:1050px;" title="Search Results">	 	
+	<h2>Search Results</h2>		
+	<grid-container template="templates/grid_template.html" data="data/users.php" save="/save/">
+		<grid-columns>
+			<grid-column title="ID" bind="ID" />
+			<grid-column title="First Name" bind="FIRSTNAME" />
+			<grid-column title="Last Name" bind="LASTNAME" />
+			<grid-column title="Email" bind="EMAIL" />
+			<grid-column title="Phone" bind="PHONE" />
+		</grid-columns>
+		<grid edit-link="1" edit-id="0" edit-action="openRecordInTab" edit-form="forms/form_user_search_template.html" />
+	</grid-container>
+	<br />	
+</div>

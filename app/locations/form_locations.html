@@ -1,0 +1,17 @@
+<div class="form-tab" title="Locations">
+	<div style="padding-bottom:3px;">
+ 	</div>
+	<br />
+	<grid-container template="../../templates/grid_template.html" data="data/locations.php" save="/save/">
+		<grid-columns>
+			<grid-column title="ID" bind="ID" />
+			<grid-column title="Name" bind="NAME" />
+			<grid-column title="Address" bind="ADD1" />
+			<grid-column title="City" bind="CITY" />
+			<grid-column title="State" bind="STATE" />
+			<grid-column title="Zip" bind="ZIP" />
+			<grid-column title="Country" bind="COUNTRY" />
+		</grid-columns>
+		<grid edit-link="1" edit-id="0" edit-action="openRecordInTab" edit-form="_index.html" />
+	</grid-container>
+</div>

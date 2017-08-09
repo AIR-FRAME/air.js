@@ -1,3 +1,1 @@
 # air.js
-# Shamood
-# ssd

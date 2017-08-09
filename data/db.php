@@ -1,9 +1,8 @@
 <?php
-	//$dbservername =  "dbjson.com";
 	$dbservername =  "127.0.0.1";
-	$dbusername = "bobby";
-	$dbpassword = "one2three";
-	$dbname = "VSYNC";
+	$dbusername = "poppy";
+	$dbpassword = "*************";
+	$dbname = "airjs";
 
 	$conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
 	// Check connection

@@ -1,13 +1,10 @@
 # Air.js
 
-[![Build Status](https://travis-ci.org/accord-net/framework.svg?branch=development)](https://travis-ci.org/accord-net/framework)
-[![Github All Releases](https://img.shields.io/github/downloads/accord-net/framework/total.svg)]()
 [![License](https://img.shields.io/badge/license-LGPL--2.1-blue.svg)](LICENSE)
 [![NuGet](https://img.shields.io/nuget/v/Accord.svg)]()
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Accord.svg)]()
-<!--[![GitHub release](https://img.shields.io/github/release/accord-net/framework.svg?maxAge=2592000)]()-->
 
-The Accord.NET project provides machine learning, statistics, artificial intelligence, computer vision and image processing methods to .NET. It can be used on Microsoft Windows, Xamarin, Unity3D, Windows Store applications, Linux or mobile.
+The Air.js project provides easy framework.
 
 After merging with the AForge.NET project, the framework now offers a unified API for learning/training machine learning models that is both easy to use *and* extensible. It is based on the following pattern:
 
@@ -17,12 +14,6 @@ After merging with the AForge.NET project, the framework now offers a unified AP
 
 For more information, please see the getting started guide, and check the wiki. *Note: the wiki is being gradually updated/rewritten followed the recent merge/refactoring. Please do not hesitate to edit it if you would like!*
 
-
-# Installing
-
-To install the framework in your application, please use NuGet. If you are on Visual Studio, right-click on the "References" item in your solution folder, and select "Manage NuGet Packages." Search for Accord.MachineLearning ([or equivalently, Accord.Math, Accord.Statistics or Accord.Imaging depending on your initial goal](https://www.nuget.org/packages?q=accord.net)) and select "Install."
-
-If you would like to install the framework on [Unity3D applications](https://unity3d.com), download the "libsonly" compressed archive from the [framework releases page](https://github.com/accord-net/framework/releases). Navigate to the Releases/Mono folder, and copy the .dll files to the Plugins folder in your Unity project. Finally, find and add the System.ComponentModel.DataAnnotations.dll assembly that should be available from your system to the Plugin folders as well.
 
 ## Sample applications
 
@@ -39,24 +30,6 @@ Please download and install the following dependencies:
 - [Sandcastle Help File Builder (with VS2013 extension)](https://github.com/EWSoftware/SHFB/releases)
 - [NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)
 
-Then navigate to the Sources directory, and open the *Accord.NET.sln* solution file.
-
-
-#### With Visual Studio Code
-
-Please download and install the following dependencies:
-
-
-
-#### With Visual Studio 2017
-
-Please download and install the following dependencies:
-
-- [T4 Toolbox for Visual Studio 2017](https://github.com/hagronnestad/T4Toolbox/releases/tag/vs2017-b1)
-- [Sandcastle Help File Builder (with VS2017 extension)](https://github.com/EWSoftware/SHFB/releases)
-- [NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)
-
-Then navigate to the Sources directory, and open the *Accord.NET.sln* solution file.
 
 #### With Mono (Linux/xbuild)
 

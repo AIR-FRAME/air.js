@@ -9,6 +9,7 @@ Download the framework and start making your application in minutes.
 - [Live Demo](https://dbjson.com/demo)
 
 
+Template Examples for Grid
 ```
 <grid-container template="grid_template.html" data="cards.php?id={id}">
    <grid-columns>

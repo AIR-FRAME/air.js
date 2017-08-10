@@ -33,18 +33,20 @@ Please download and install the following dependencies:
 
 #### With Mono (Linux/xbuild)
 
-<grid-container template="../../templates/grid_template.html" data="data/locations.php" save="/save/">
-	<grid-columns>
-		<grid-column title="ID" bind="ID" />
-		<grid-column title="Name" bind="NAME" />
-		<grid-column title="Address" bind="ADD1" />
-		<grid-column title="City" bind="CITY" />
-		<grid-column title="State" bind="STATE" />
-		<grid-column title="Zip" bind="ZIP" />
-		<grid-column title="Country" bind="COUNTRY" />
-	</grid-columns>
-	<grid edit-link="1" edit-id="0" edit-action="openRecordInTab" edit-form="_index.html" />
-</grid-container>
+    # Install Mono
+    sudo apt-get install mono-complete monodevelop monodevelop-nunit git autoconf make
+
+    # Clone the repository
+    git clone https://github.com/accord-net/framework.git
+
+    # Enter the directory
+    cd framework
+
+    # Build the framework solution using Mono
+    ./autogen.sh
+    make build
+    make samples
+    make test
     
 
 # Contributing

@@ -6,7 +6,7 @@ The Air.js project provides easy client side UI framework.
 
 Attribute based UI framework
 
-- [Sample Pages](https://dbjson.com/samplepages)
+- [Sample Pages](https://dbjson.com/samplecodes)
 - [Live Demo](https://dbjson.com/demo)
 
 For more information, please see the getting started guide, and check the wiki. *Note: the wiki is being gradually updated/rewritten followed the recent merge/refactoring. Please do not hesitate to edit it if you would like!*
@@ -46,4 +46,4 @@ Please download and start using immidiatily:
 
 If you would like to contribute, please do so by helping us update the [project's Wiki pages](https://github.com/AIR-FRAME/air.js/wiki). While you could also make a donation through PayPal [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YYWWWW8BG), fill-in bug reports and contribute code in the form of pull requests, the most precious donation we could receive would be a bit of your time - [please take some minutes to submit us more documentation examples to our Wiki pages](https://github.com/AIR-FRAME/air.js/wiki) :wink: 
 
-Join the chat at https://dbjson.com
+Send email at bobbyandthomas@gmail.com

@@ -6,8 +6,8 @@ The Air.js project provides easy client side UI framework.
 
 Attribute based UI framework
 
-- Sample Pages [link](https://dbjson.com/samplepages);
-- Live Demo [link](https://dbjson.com/demo);
+- [Sample Pages](https://dbjson.com/samplepages)
+- [Live Demo](https://dbjson.com/demo)
 
 For more information, please see the getting started guide, and check the wiki. *Note: the wiki is being gradually updated/rewritten followed the recent merge/refactoring. Please do not hesitate to edit it if you would like!*
 

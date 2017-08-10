@@ -1,16 +1,13 @@
 # Air.js
 
 [![License](https://img.shields.io/badge/license-LGPL--2.1-blue.svg)](LICENSE)
-[![NuGet](https://img.shields.io/nuget/v/Accord.svg)]()
-[![NuGet Pre Release](https://img.shields.io/nuget/vpre/Accord.svg)]()
 
-The Air.js project provides easy framework.
+The Air.js project provides easy client side UI framework.
 
-After merging with the AForge.NET project, the framework now offers a unified API for learning/training machine learning models that is both easy to use *and* extensible. It is based on the following pattern:
+Attribute based UI framework
 
-- Choose a [learning algorithm](http://accord-framework.net/docs/html/N_Accord_MachineLearning.htm) that provides a Learn(x, y) or Learn(x) method;
-- [Use the Learn(x, y)](http://accord-framework.net/docs/html/M_Accord_MachineLearning_VectorMachines_Learning_SequentialMinimalOptimization_Learn.htm) to create a [machine learning model](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_SupportVectorMachine.htm) learned from the data; 
-- Use the model's [Transform](http://accord-framework.net/docs/html/M_Accord_MachineLearning_ClassifierBase_2_Transform.htm), [Decide](http://accord-framework.net/docs/html/M_Accord_MachineLearning_ClassifierBase_2_Decide_1.htm), [Scores](http://accord-framework.net/docs/html/M_Accord_MachineLearning_BinaryScoreClassifierBase_1_Scores_3.htm), [Probabilities](http://accord-framework.net/docs/html/M_Accord_MachineLearning_BinaryLikelihoodClassifierBase_1_Probabilities.htm) or [LogLikelihoods](http://accord-framework.net/docs/html/M_Accord_MachineLearning_VectorMachines_SupportVectorMachine_2_LogLikelihood.htm) methods.
+- Sample Pages [link](https://dbjson.com/samplepages);
+- Live Demo [link](https://dbjson.com/demo);
 
 For more information, please see the getting started guide, and check the wiki. *Note: the wiki is being gradually updated/rewritten followed the recent merge/refactoring. Please do not hesitate to edit it if you would like!*
 
@@ -24,7 +21,7 @@ The framework comes with a wide range of sample applications to help get you sta
 
 #### With Visual Studio 2013
 
-Please download and install the following dependencies:
+Please download and start using immidiatily:
 
 - [T4 Toolbox for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/791817a4-eb9a-4000-9c85-972cc60fd5aa)
 - [Sandcastle Help File Builder (with VS2013 extension)](https://github.com/EWSoftware/SHFB/releases)
@@ -37,7 +34,7 @@ Please download and install the following dependencies:
     sudo apt-get install mono-complete monodevelop monodevelop-nunit git autoconf make
 
     # Clone the repository
-    git clone https://github.com/accord-net/framework.git
+    git clone https://github.com/AIR-FRAMA/air.js.git
 
     # Enter the directory
     cd framework
